@@ -13,36 +13,43 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-amber-100 bg-pattern-b">
-        <Container className="relative lg:h-screen py-32 lg:py-0 lg:pb-[40px] text-center flex justify-center items-center">
-          <div className="lg:flex lg:space-x-12 lg:items-center">
-            <div className="w-48 h-48 rounded-full bg-white/50 mx-auto overflow-hidden">
-              <Image
-                src="/profile.jpg"
-                width={300}
-                height={300}
-                alt="Photo profile"
-              />
-            </div>
-            <div className="lg:text-left">
-              <h1 className="font-cursive text-5xl lg:text-7xl mt-12 lg:mt-0">
+      <div className="relative overflow-hidden">
+        <Container className="flex items-center justify-center py-32 text-center lg:h-screen lg:py-0 lg:pb-[40px]">
+          <Image
+            className="absolute -left-72 top-0 -z-10 md:-left-48"
+            src="/blob.png"
+            width={400}
+            height={400}
+            alt=""
+          />
+          <Image
+            className="absolute -right-64 -bottom-48 -z-10 md:-bottom-24 md:-right-48"
+            src="/blob-2.png"
+            width={400}
+            height={400}
+            alt=""
+          />
+
+          <div className="lg:flex lg:items-center lg:space-x-12">
+            <div className="">
+              <h1 className="mt-12 font-cursive text-5xl text-amber-500 lg:mt-0 lg:text-8xl">
                 Hi there!
               </h1>
-              <p className="text-2xl mt-4 font-bold lg:text-4xl">
-                I&#39;m Toufiq Nuur Rahman
+              <p className="mt-4 text-2xl font-bold lg:mt-8 lg:text-4xl">
+                Iam Toufiq Nuur Rahman
               </p>
-              <p className="lg:text-2xl">Software Developer</p>
+              <p className="mt-1 lg:text-2xl">Software Developer</p>
             </div>
           </div>
         </Container>
       </div>
 
       <div>
-        <Container className="py-16">
+        <Container className="py-24">
           <h2 className="text-center font-cursive text-5xl lg:text-7xl">
             Activities
           </h2>
-          <div className="md:flex justify-center md:space-x-24 mt-16">
+          <div className="mt-16 justify-center md:flex md:space-x-24">
             <div className="hidden md:block md:w-1/4">
               <Image
                 src="/activity.svg"
@@ -54,19 +61,19 @@ export default function Home() {
             <div>
               <ul className="space-y-8 pl-10">
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 shadow-lg shadow-amber-500/50 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400 shadow-lg shadow-amber-500/50"></div>
                   <h2 className="text-xl font-bold">2022</h2>
                   <p className="text-lg">
                     Partcipacing in JuaraAndroid Season 2
                   </p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">2022</h2>
                   <p className="text-lg">Partcipacing in JuaraGCP Season 7</p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">2021</h2>
                   <p className="text-lg">Partcipacing in Hacktoberfest</p>
                 </li>
@@ -77,15 +84,15 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-br from-transparent via-transparent to-amber-200">
-        <Container className="py-16">
+        <Container className="py-24">
           <h2 className="text-center font-cursive text-5xl lg:text-7xl">
             Skills
           </h2>
-          <div className="md:flex justify-center md:space-x-24 mt-16">
+          <div className="mt-16 justify-center md:flex md:space-x-24">
             <div className="md:max-w-md">
               <ul className="space-y-8 pl-10">
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 shadow-lg shadow-amber-500/50 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400 shadow-lg shadow-amber-500/50"></div>
                   <h2 className="text-xl font-bold">Javascript / Typescript</h2>
                   <p className="text-lg">
                     <Link href="/">
@@ -94,7 +101,7 @@ export default function Home() {
                   </p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">React / Next Js</h2>
                   <p className="text-lg">
                     Passed linkedin quiz, graduate from Dicoding in React
@@ -102,17 +109,17 @@ export default function Home() {
                   </p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">Css</h2>
                   <p className="text-lg">Passed linkedin skill quiz</p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">Node Js</h2>
                   <p className="text-lg">Passed linkedin skill quiz</p>
                 </li>
                 <li className="relative">
-                  <div className="w-6 h-6 rounded-full bg-amber-400 absolute top-1 -left-10"></div>
+                  <div className="absolute top-1 -left-10 h-6 w-6 rounded-full bg-amber-400"></div>
                   <h2 className="text-xl font-bold">Git</h2>
                   <p className="text-lg">
                     Graduate from Dicoding in Basic Git with Github
@@ -120,7 +127,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="hidden md:block md:w-1/4 px-8">
+            <div className="hidden px-8 md:block md:w-1/4">
               <Image
                 src="/skill.svg"
                 width={500}
@@ -132,19 +139,19 @@ export default function Home() {
         </Container>
       </div>
       <div className="bg-gradient-to-tr from-transparent via-transparent to-amber-200">
-        <Container className="py-16">
+        <Container className="py-24">
           <h2 className="text-center font-cursive text-5xl lg:text-7xl">
             Feel free to hit me up!
           </h2>
-          <p className="text-center mt-4">
+          <p className="mt-4 text-center">
             If you want to reach me out, feel free to contact me on:
           </p>
-          <div className="flex gap-4 mx-auto justify-center mt-8">
-            <button className="bg-amber-200 px-6 py-2 rounded-md">Email</button>
-            <button className="bg-amber-200 px-6 py-2 rounded-md">
+          <div className="mx-auto mt-8 flex justify-center gap-4">
+            <button className="rounded-md bg-amber-200 px-6 py-2">Email</button>
+            <button className="rounded-md bg-amber-200 px-6 py-2">
               Twitter
             </button>
-            <button className="bg-amber-200 px-6 py-2 rounded-md">
+            <button className="rounded-md bg-amber-200 px-6 py-2">
               Discord
             </button>
           </div>

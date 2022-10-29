@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 .bg-pattern-b {
-  background: radial-gradient(20px at 75% 100%, #0000 98%, #fde68a) 50%
+  background: radial-gradient(20px at 75% 100%, #0000 98%, #fde68a) 100%
+      calc(100% - 20px) / 80px 100% repeat-x,
+    radial-gradient(15px at 25% 50%, #fde68a 99%, #0000 101%) bottom/40px 40px
+      repeat-x;
+  /* background: radial-gradient(20px at 75% 100%, #0000 98%, #fde68a) 50%
       calc(100% - 20px) / 40px 100% repeat-x,
     radial-gradient(20px at 25% 50%, #fde68a 99%, #0000 101%) bottom/80px 40px
-      repeat-x;
+      repeat-x; */
 }
 
 .bg-pattern-t {

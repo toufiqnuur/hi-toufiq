@@ -25,13 +25,13 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="border-b border-black bg-amber-200">
-      <Container className="flex flex-col md:flex-row items-center justify-between">
+    <header>
+      <Container className="flex flex-col md:flex-row items-center justify-between py-2">
         <Link href="/" legacyBehavior>
-          <a className="font-cursive text-4xl mt-2 md:mt-0 pb-1">toufiq.</a>
+          <a className="font-cursive text-5xl mt-2 md:mt-0 pb-1">toufiq.</a>
         </Link>
 
-        <nav className="mt-2 md:mt-0">
+        <nav className="mt-2 md:mt-0 text-lg">
           <ul className="flex space-x-4">
             {navLinks.map((nav, id) => (
               <li key={id}>
